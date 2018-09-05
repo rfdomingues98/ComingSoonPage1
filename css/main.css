@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:700");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.bg-img {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.bg-img::before {
+  content: "";
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+}
+
+.bg-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  background-color: #1f1f1f;
+  opacity: 0.7;
+}
+
+.center {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 8em;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3em;
+}
+
+hr {
+  margin: auto;
+  width: 80%;
+  border: 2px solid #fff;
+}
+
+.img-credits {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 0.25em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
